@@ -1,5 +1,7 @@
 package com.devmind.testinaction.model;
 
+import java.time.LocalDate;
+
 /**
  * @author devmind
  */
@@ -7,11 +9,11 @@ public class Friend {
 
     private Long id;
     private String name;
-    private int birthYear;
+    private LocalDate birthday;
 
-    public Friend(String name, int birthYear) {
+    public Friend(String name, LocalDate birthday) {
         this.name = name;
-        this.birthYear = birthYear;
+        this.birthday = birthday;
     }
 
     public Long getId() {
@@ -30,11 +32,11 @@ public class Friend {
         this.name = name;
     }
 
-    public int getBirthYear() {
-        return birthYear;
+    public LocalDate getBirthday() {
+        return birthday;
     }
 
-    public void setBirthYear(int birthYear) {
-        this.birthYear = birthYear;
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
     }
 }
